@@ -1,0 +1,31 @@
+name: QuickTeleport
+version: '${project.version}'
+api-version: 1.14
+main: me.arimas.quickteleport.QuickTeleport
+author: Arimas
+description: A plugin that allows players to set a quick teleport location and teleport to it with ease.
+
+commands:
+  setquickteleport:
+    description: Set the quick teleport location.
+    usage: /setquickteleport
+    permission: quickteleport.set
+    aliases:
+      - setquicktp
+      - setqtp
+      - setqt
+  quickteleport:
+    description: Teleport to the quick teleport location.
+    usage: /quickteleport
+    permission: quickteleport.teleport
+    aliases:
+      - quicktp
+      - qtp
+      - qt
+permissions:
+  quickteleport.set:
+    description: Allows setting the quick teleport location.
+    default: true
+  quickteleport.teleport:
+    description: Allows teleporting to the quick teleport location.
+    default: true
